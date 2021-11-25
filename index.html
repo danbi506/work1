@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="wrap">
@@ -12,10 +13,20 @@
             <h1>한글 난독화</h1>
         </header>
         <section>
-            <textarea name="txtbox1" id="txtbox1" cols="70" rows="20"></textarea>
-            <button>변환하기</button>
-            
-            <textarea name="txtbox2" id="txtbox2" cols="70" rows="20"></textarea>
+            <article id="art1">
+                <textarea name="txtbox1" id="txtbox1" cols="70" rows="20"></textarea>
+                <button id="changetxt">변환하기</button>
+                <div id="bt">
+                    <button class="bto">입력창 지우기</button>
+                    <button class="bto">변환 옵션</button>
+                </div>
+            </article>
+            <article id="art2">
+                <h2>변환된 문장</h2>
+                <textarea name="txtbox2" id="txtbox2" cols="70" rows="20"></textarea>
+                <button class="bto lastbt">클립보드에 복사</button>
+                <p>한국인만 읽을 수 있는 <a href="https://tohanja.hanmesoft.com/">한자문장으로 바꾸려면 여기</a></p>    
+            </article>
         </section>
     </div>
 </body>
